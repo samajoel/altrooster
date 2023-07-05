@@ -22,6 +22,9 @@
       .gradient {
         background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
       }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body
@@ -83,22 +86,22 @@
             <li class="mr-3">
               <a
                 class="inline-block py-2 px-4 text-black font-bold no-underline"
-                href="#"
-                >Active</a
+                href="#section1"
+                >Inicio</a
               >
             </li>
             <li class="mr-3">
               <a
                 class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-                >link</a
+                href="#section2"
+                >Nosotros</a
               >
             </li>
             <li class="mr-3">
               <a
                 class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
-                >link</a
+                href="#section3"
+                >Proceso de Trabajo</a
               >
             </li>
           </ul>
@@ -106,7 +109,7 @@
             id="navAction"
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
-            Action
+            <a href="#section4">Planes</a>
           </button>
         </div>
       </div>
@@ -119,6 +122,7 @@
       >
         <!--Left Col-->
         <div
+          id="section1"
           class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
         >
           <h1 class="my-4 text-5xl font-bold leading-tight">
@@ -178,7 +182,7 @@
         </g>
       </svg>
     </div>
-    <section class="bg-white border-b py-8">
+    <section id="section2" class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
         <h2
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -659,7 +663,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-white border-b py-8">
+    <section id="section3" class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -754,6 +758,7 @@
     <section class="bg-gray-100 py-8">
       <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
         <h2
+          id="section4"
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
         >
           Precios
